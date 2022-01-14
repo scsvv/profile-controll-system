@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "61df1b74004b90d402cfdef5"
+  },
+  "id": 12,
+  "login": "aa",
+  "age": 21
+},{
+  "_id": {
+    "$oid": "61df1b74004b90d402cfdef6"
+  },
+  "id": 13,
+  "login": "joso",
+  "age": 45
+},{
+  "_id": {
+    "$oid": "61df1b74004b90d402cfdef7"
+  },
+  "id": 14,
+  "login": "maks",
+  "age": 12
+},{
+  "_id": {
+    "$oid": "61df1b74004b90d402cfdef8"
+  },
+  "id": 15,
+  "login": "jost",
+  "age": 15
+}]
