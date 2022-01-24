@@ -10,7 +10,6 @@ const UserRouter = Router();
 
 const CONNECTION_STRING = 'mongodb+srv://todoadmin:1111@cluster0.i0ll6.mongodb.net/userslist?retryWrites=true&w=majority';
 const UserSchema = new mongoose.Schema({
-   // id: Number, 
     password: String, 
     login: String, 
     age: Number
@@ -21,7 +20,6 @@ mongoose.connect(CONNECTION_STRING);
 
 UserRouter.get('/', async (req, res) => {
     const data = await UserModel.find({});
-    console.log(data[0].id);
     res.send(data);
 });
 
@@ -47,7 +45,6 @@ UserRouter.delete('/:id', async (req, res) => {
 
 UserRouter.put('/:id', async (req, res) => {
     const data = req.body;
-    console.log(data);
     const result = await UserModel.findByIdAndUpdate(req.params.id, data);
     res.send(result);
 });
